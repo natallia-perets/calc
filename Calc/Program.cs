@@ -28,9 +28,7 @@ namespace Calc
                 Console.WriteLine("Input format:'operand'_'operation'_ 'operand'. Example: -1,11111 + 1\n");
                 Console.Write(">");
                 string input = Console.ReadLine();
-                //cki = Console.ReadKey();
-                
-                //string input = Console.ReadLine();
+               
                 if (Regex.IsMatch(input, pattern))
                 {
                     char[] delimiters = { ' ' };
