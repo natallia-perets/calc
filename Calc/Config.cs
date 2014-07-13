@@ -11,7 +11,7 @@ namespace Calc.Configurations
     {
         public static string GetConfigNumber()
         {
-            return ConfigurationManager.AppSettings["Key"].ToString();
+            return ConfigurationManager.AppSettings["accuracy"].ToString();
         }
     }
 }
