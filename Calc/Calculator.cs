@@ -10,15 +10,48 @@ namespace Calc
 {
     class Calculator
     {
-        int accuracy;
-        Expression[] historylist;
+        private int accuracy;
+        private string historylist;
         public Calculator(int accuracy)
         {
             this.accuracy = accuracy;
         }
-       /* public Expression[] GetHistoryList()
+        public void AddToHistoryList(Expression e){
+            historylist += e.ToString();
+            historylist += '\n';
+        }
+        public void ShowHistory()
         {
-
-        }*/
+            if (String.IsNullOrEmpty(historylist))
+            {
+                System.Console.WriteLine("\nHistory is empty. Nothing to show");
+                return;
+            }
+            System.Console.WriteLine("\n" + historylist);
+        }
+        public void WriteToFile(string filepath)
+        {
+            if (String.IsNullOrEmpty(historylist))
+            {
+                System.Console.WriteLine("\nHistory is empty. Nothing is saved to a file");
+                return;
+            }
+            char[] delimiters = {'\n'};
+            string[] lines = historylist.Split(delimiters);
+            try
+            {
+                System.IO.StreamWriter writer = new System.IO.StreamWriter(filepath, true);
+                foreach (string line in lines)
+                {
+                    writer.WriteLine(line);
+                }
+                writer.Close();
+                System.Console.WriteLine("Result saved to a file");
+            }
+            catch (Exception e)
+            {
+                System.Console.WriteLine(e.ToString());
+            }
+        }
     }
 }
