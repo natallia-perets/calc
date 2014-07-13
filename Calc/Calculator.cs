@@ -46,7 +46,7 @@ namespace Calc
                     writer.WriteLine(line);
                 }
                 writer.Close();
-                System.Console.WriteLine("Result saved to a file");
+                System.Console.WriteLine("\nResult saved to a file");
             }
             catch (Exception e)
             {
