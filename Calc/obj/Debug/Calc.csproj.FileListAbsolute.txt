@@ -1,0 +1,14 @@
+c:\users\natallia\documents\visual studio 2013\Projects\Calc\Calc\bin\Debug\Calc.exe.config
+c:\users\natallia\documents\visual studio 2013\Projects\Calc\Calc\obj\Debug\Calc.csprojResolveAssemblyReference.cache
+c:\users\natallia\documents\visual studio 2013\Projects\Calc\Calc\bin\Debug\Calc.exe
+c:\users\natallia\documents\visual studio 2013\Projects\Calc\Calc\bin\Debug\Calc.pdb
+c:\users\natallia\documents\visual studio 2013\Projects\Calc\Calc\obj\Debug\Calc.exe
+c:\users\natallia\documents\visual studio 2013\Projects\Calc\Calc\obj\Debug\Calc.pdb
+E:\projects\Calc\Calc\bin\Debug\Calc.exe.config
+E:\projects\Calc\Calc\obj\Debug\Calc.exe
+E:\projects\Calc\Calc\obj\Debug\Calc.pdb
+E:\projects\Calc\Calc\bin\Debug\Calc.exe
+E:\projects\Calc\Calc\bin\Debug\Calc.pdb
+E:\projects\Calc\Calc\obj\Debug\Calc.csprojResolveAssemblyReference.cache
+E:\projects\Calc\Calc\bin\Debug\Calculator.dll
+E:\projects\Calc\Calc\bin\Debug\Calculator.pdb
