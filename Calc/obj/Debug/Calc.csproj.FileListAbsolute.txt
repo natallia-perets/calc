@@ -1,7 +1,0 @@
-E:\projects\Calc\Calc\bin\Debug\Calc.exe.config
-E:\projects\Calc\Calc\bin\Debug\Calc.exe
-E:\projects\Calc\Calc\bin\Debug\Calc.pdb
-E:\projects\Calc\Calc\bin\Debug\Calculator.dll
-E:\projects\Calc\Calc\bin\Debug\Calculator.pdb
-E:\projects\Calc\Calc\obj\Debug\Calc.exe
-E:\projects\Calc\Calc\obj\Debug\Calc.pdb
