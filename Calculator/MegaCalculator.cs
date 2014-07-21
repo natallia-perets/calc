@@ -63,5 +63,10 @@ namespace Calc
         {
             _operators.Add(new OperatorFactory().CreateOperator(op));
         }
+
+        public void RemoveOperator(char op)
+        {
+            _operators.Remove(_operators.FirstOrDefault(x => x.Key == op));
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Calculator.Operators
 {
-    class DivideOperator : IOperator
+    public class DivideOperator : IOperator
     {
         public double Apply(double a, double b)
         {

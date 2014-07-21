@@ -15,8 +15,10 @@ namespace Calc
             IStorage storage = new TextFileStorage();
             List<IOperator> listop = new List<IOperator>();
             listop.Add(new PlusOperator());
+            listop.Add(new MinusOperator());
 
             var calc = new MegaCalculator(accuracy, storage, listop);
+            calc.RemoveOperator('-');
             string pattern = @"^(\s+)?(\-)?\d+(,\d+)?(\s+)?(\+|-|\*|/)(\s+)?(\-)?\d+(,\d+)?(\s+)?$";
             Console.WriteLine("Hello. This is CALCULATOR. It takes 2 operands and performs +-/* operations. You can adjust operation accuracy with the help of app.config file. For exit use Esc key");
             
