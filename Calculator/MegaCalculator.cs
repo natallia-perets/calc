@@ -31,8 +31,7 @@ namespace Calc
                 return;
             }
 
-            //IOperator @operator = operatorFactory.CreateOperator(operation);
-            Expression expr = new Expression(arg1, arg2, @operator);
+            var expr = new Expression(arg1, arg2, @operator);
             expr.Calculate();
             AddToHistoryList(expr);
             System.Console.WriteLine(expr.ToString());
