@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Calculator;
 
 namespace Calc
@@ -30,7 +27,7 @@ namespace Calc
             if (@operator == null)
             {
                 //throw new InvalidOperationException("Operator not found");
-                System.Console.WriteLine("Operator is not implemented");
+                Console.WriteLine("Operator is not implemented");
                 return;
             }
 
