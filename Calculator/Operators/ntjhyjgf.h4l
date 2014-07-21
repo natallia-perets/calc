@@ -1,20 +1,20 @@
 ﻿namespace Calculator.Operators
 {
-    public class PlusOperator : IOperator
+    class DivideOperator : IOperator
     {
         public double Apply(double a, double b)
         {
-            return a + b;
+            return a / b;
         }
 
-        char IOperator.Key
+        string IOperator.Key
         {
-            get { return '+'; }
+            get { return '/'; }
             set { throw new System.NotImplementedException(); }
         }
         public override string ToString()
         {
-            return "+";
+            return "/";
         }
     }
 }

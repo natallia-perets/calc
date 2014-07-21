@@ -2,3 +2,4 @@ E:\projects\Calc\Calculator\bin\Debug\Calculator.dll
 E:\projects\Calc\Calculator\bin\Debug\Calculator.pdb
 E:\projects\Calc\Calculator\obj\Debug\Calculator.dll
 E:\projects\Calc\Calculator\obj\Debug\Calculator.pdb
+E:\projects\Calc\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache

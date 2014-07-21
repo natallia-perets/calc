@@ -14,26 +14,27 @@ namespace Calc
         private readonly IStorage _storage;
         private List<Expression> _historylist;
 
-        private List<IOperator> _operators; 
-        public MegaCalculator(int accuracy, IStorage storage)
+        private List<IOperator> _operators;
+        public MegaCalculator(int accuracy, IStorage storage, List<IOperator> ops)
         {
             this.accuracy = accuracy;
             _storage = storage;
             _historylist = new List<Expression>();
+            _operators = ops;
         }
 
         public void AddExpression(double arg1, double arg2, char operation)
         {
-            var operatorFactory = new OperatorFactory();
-
-            var @operator = _operators.FirstOrDefault(x => x.Key == char);
+            var @operator = _operators.FirstOrDefault(x => x.Key == operation);
 
             if (@operator == null)
             {
-                throw new InvalidOperationException("Operator not found");
+                //throw new InvalidOperationException("Operator not found");
+                System.Console.WriteLine("Operator is not implemented");
+                return;
             }
 
-            IOperator @operator = operatorFactory.CreateOperator(operation);
+            //IOperator @operator = operatorFactory.CreateOperator(operation);
             Expression expr = new Expression(arg1, arg2, @operator);
             expr.Calculate();
             AddToHistoryList(expr);
@@ -60,6 +61,11 @@ namespace Calc
             {
                 System.Console.WriteLine(e.ToString());
             }
+        }
+
+        public void AddOperator(char op)
+        {
+            _operators.Add(new OperatorFactory().CreateOperator(op));
         }
     }
 }
